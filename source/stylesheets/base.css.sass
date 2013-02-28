@@ -1,0 +1,53 @@
+body 
+	background: #d4d4d4 url("../images/background.png")
+	
+#logo
+	
+	display: block	
+	margin: 0 auto
+	width: 50%
+
+	// hover region
+	> div 
+
+		margin: 0 auto	
+		width: 50%
+		background-color: orange
+		padding: 2em
+		
+		// style the first children which are direct children of the div container class
+		> h2
+			cursor: pointer
+			position: relative
+			float: left
+			text-align: center
+
+			&:after
+				content: "."	
+
+		// initialize the hover content changes etc 
+		&:hover		
+
+			h2
+
+				&:first-of-type
+
+					&:after
+
+						content: "tudent."
+
+				&:nth-of-type(2)
+
+					&:after
+
+						content: "acker."
+
+				&:last-of-type
+
+					&:after
+
+						content: "ngineer."
+
+
+
+

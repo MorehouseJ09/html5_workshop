@@ -1,3 +1,0 @@
-
-
-alert "HELLO WORLD FROM TEST"
