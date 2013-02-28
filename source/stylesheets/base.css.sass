@@ -7,46 +7,35 @@ body
 	margin: 0 auto
 	width: 50%
 
-	// hover region
-	> div 
+	// grab the she container--
+	> div 		
 
-		margin: 0 auto	
-		width: 50%
-		background-color: orange
-		padding: 2em
-		
-		// style the first children which are direct children of the div container class
-		> h2
-			cursor: pointer
-			position: relative
-			float: left
-			text-align: center
+		> h2 
 
+			// add a period after each of the tags
 			&:after
-				content: "."	
 
-		// initialize the hover content changes etc 
-		&:hover		
+				content: "."
+				color: orange
+				-webkit-transition: color 2s ease-in-out
 
-			h2
+			// now correct all three so when we hover they show the proper content
+			&:first-of-type:hover:after
 
-				&:first-of-type
+				color: blue
+				content: "tudent."
 
-					&:after
+			&:nth-of-type(2):hover:after
 
-						content: "tudent."
+				content: "acker."
 
-				&:nth-of-type(2)
+			&:nth-of-type(3):hover:after
 
-					&:after
+				content: "ngineer."
 
-						content: "acker."
 
-				&:last-of-type
 
-					&:after
 
-						content: "ngineer."
 
 
 
