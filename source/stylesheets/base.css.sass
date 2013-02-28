@@ -1,42 +1,110 @@
+@import animations
+
 body 
-	background: #d4d4d4 url("../images/background.png")
+	// background: #d4d4d4 url("../images/background.png")
+	background: #d4d4d4 url("../images/carbon.png")	
 	
 #logo
-	
+			
 	display: block	
-	margin: 0 auto
-	width: 50%
+	margin: 1em
+	padding: 1em
+	overflow: auto
+
+	// target all divs here
+	> div
+
+		@include bumpbox()
+		position: relative
+		display: block
+		float: left
+		box-shadow: 0.5em 0.5em 0.5em rgba(0,0,0,0.5)
+		background-color: rgba(255, 255, 255, 0.2)
+		overflow-y: auto
+		-webkit-transition: box-shadow 2s
+		border-radius: 0.5em
+		
+		&:hover 
+			box-shadow: 0.5em 0.5em 0.5em rgba(0,0,0,1)
+
+
+	// grab the first div where the images live
+	> div:nth-of-type(1)
+
+		float: left	
+		width: 20em
+		position: relative
+		padding: 1em
+
+		> img 
+
+			position: relative
+			width: 100%			
+			display:block
 
 	// grab the she container--
-	> div 		
+	> div:nth-of-type(2)
 
+		margin-left: 1em
+		float: left
+		width: 20em
+		padding: 1em
+		
+		@include bumpbox	
 		> h2 
 
-			// add a period after each of the tags
-			&:after
+			cursor: pointer
+			-webkit-transition: opacity 2s
 
-				content: "."
-				color: orange
-				-webkit-transition: color 2s ease-in-out
+			// grab the small span -- this is the second piece of the words
+			> span
+				-webkit-transition: opacity 2s
+				opacity: 0
 
-			// now correct all three so when we hover they show the proper content
-			&:first-of-type:hover:after
+			// now listen on hover so that we can fade this in properly
+			&:hover
+				// span should have full opacity now 
+				> span
 
-				color: blue
-				content: "tudent."
+					opacity: 1
 
-			&:nth-of-type(2):hover:after
+		// now lets do something fancy with our name ...		
+		> h1
 
-				content: "acker."
+			color: rgba(0,0,0,0.8)
+			padding: 0
+			text-align: center
+			margin: 0 0 2em 0
+			cursor: pointer
+			-webkit-transition: text-shadow 2s
+			-webkit-transition: color 2s
 
-			&:nth-of-type(3):hover:after
+			&:hover
 
-				content: "ngineer."
+				color: rgba(0,0,0,0.5)
+				// text-shadow: -0.5px -0.5px 0.5px rgba(0,0,0,1)
+
+	// make sure that we clean up after ourselves for the rest of the page
+	// make sure elements don't float
+	// clear: both			
+
+h1, h2 
+
+	color: rgba(0,0,0,0.3)
+	font-weight: bold
+	font-size: 32px
+	text-transform: uppercase
+	text-shadow: 0 1px 0 rgba(255,255,255,0.5)
+	padding: 2em
+	margin: 0
 
 
+h2
 
-
-
-
-
+	padding: 0
+	margin: 0
+	font-size: 1.5em
+	color: rgba(26,26, 26, 0.7)
+	// x offset, y offset,spread etc ...
+	text-shadow: 1px 1px 2px rgba(0,0,0,1.0)
 

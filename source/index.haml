@@ -3,15 +3,27 @@ title: Jon Morehouse
 ---
 
 #logo
+
 	/ store all images in the first container
-	#images
+	%div	
 
-		%h1= "TEST"			
+		/ prefer the older, more verbose :
+		%img{:src => "/images/logo.png"}
+		/ something goes here in the future!
 
-	%div
+	%div	
 
-		%h2= "S"
-		%h2= "H"
-		%h2= "E"
+		%h1= "Jon Morehouse"
+		
+		%h2
+			S
+			%span= "tudent."
 
-	%h1= "Jon Morehouse"
+		%h2
+			H
+			%span= "acker."
+
+		%h2
+			E
+			%span= "ngineer."
+

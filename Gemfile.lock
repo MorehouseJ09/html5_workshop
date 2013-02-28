@@ -101,5 +101,6 @@ PLATFORMS
 
 DEPENDENCIES
   compass
+  haml
   middleman (~> 3.0.12)
   susy
