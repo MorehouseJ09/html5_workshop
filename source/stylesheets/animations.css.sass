@@ -1,26 +1,21 @@
-@mixin bumpbox 
-	
-	-webkit-animation-name: bumpbox
-	-webkit-animation-duration: .9s
-	
-	@-webkit-keyframes bumpbox
-
-		from
-			-webkit-transform: scale(0)
-			opacity: 0
-
-		50%
-
-			-webkit-transform: scale(0)
-			opacity: 0
-
-		82.5%
-
-			-webkit-transform: scale(1.03)
-			-webkit-animation-timing-function: ease-in-out
-			opacity: 1
-
-		to
-			-webkit-transform: scale(1)
-			
-
+//animation
+@-webkit-keyframes rise
+  0%
+    // margin-top: 500px
+    -webkit-transform: scale(0)
+    opacity: 0
+  50%
+    -webkit-transform: scale(0)
+  82.5%
+    -webkit-transform: scale(1.05)
+    -webkit-animation-timing-function: ease-out
+    opacity: 1
+  100%
+    // margin-top: 0px
+    -webkit-transform: scale(1)
+      
+@mixin rise_animation
+  -webkit-animation: rise 2s
+  -moz-animation: rise 2s
+  -o-animation: rise 2s
+  animation: rise 2s

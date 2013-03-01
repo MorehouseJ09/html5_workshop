@@ -1,0 +1,36 @@
+#slider
+	
+	position: fixed
+	width: 20em
+	height: 20em
+	bottom: 10em
+	right: -20em
+	background-color: blue
+
+	> div:first-of-type 
+
+		// positional elements
+		position: relative
+		height: 5em
+		width: 2em
+		left: -2em
+
+		// make a nice right-side border
+		border-bottom-left-radius: 1em	
+		border-top-left-radius: 1em
+
+		//	 
+		background-color: rgba(255,255,255,0.2)
+		border: 1px solid rgba(255,255,255,0.5)		
+		border-right: none
+
+		// 
+		cursor: pointer
+		-webkit-transition: background-color 1s
+		-webkit-transition: left 1s
+
+		// 
+		&:hover
+
+			left: -2.2em
+			background-color: rgba(0,0,0,0.3)
