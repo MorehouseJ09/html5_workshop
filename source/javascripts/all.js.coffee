@@ -1,7 +1,4 @@
 //= require "resources/jquery.min"
+//= require "resources/paper.js"
+//= require "classes/slider"
 
-$(document).ready () ->
-
-	$('#slider > div:nth-of-type(1)').click () ->
-
-		

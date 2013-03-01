@@ -33,4 +33,7 @@ title: Jon Morehouse
 	%div
 
 	%div
-		%canvas
+		%canvas{:id => "demo_canvas"}
+
+
+%script{:type => "text/paperscript", :src => "/javascripts/paper_demo.js", "canvas" => "demo_canvas"}
