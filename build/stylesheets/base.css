@@ -63,15 +63,15 @@
 
 /* line 4, base.css.sass */
 body {
-  background: #d4d4d4 url("../images/carbon.png"); }
+  background: #d4d4d4 url("/images/carbon.png"); }
 
-/* line 8, base.css.sass */
+/* line 7, base.css.sass */
 #logo {
   display: block;
   margin: 1em;
   padding: 1em;
   overflow: auto; }
-  /* line 16, base.css.sass */
+  /* line 15, base.css.sass */
   #logo > div {
     -webkit-animation: rise 2s;
     -moz-animation: rise 2s;
@@ -86,37 +86,37 @@ body {
     -webkit-transition: box-shadow 2s;
     border-radius: 0.5em;
     border: 1px solid rgba(255, 255, 255, 0.5); }
-    /* line 29, base.css.sass */
+    /* line 28, base.css.sass */
     #logo > div:hover {
       box-shadow: 0.5em 0.5em 0.5em black; }
-  /* line 34, base.css.sass */
+  /* line 33, base.css.sass */
   #logo > div:nth-of-type(1) {
     float: left;
     width: 20em;
     position: relative;
     padding: 1em; }
-    /* line 41, base.css.sass */
+    /* line 40, base.css.sass */
     #logo > div:nth-of-type(1) > img {
       position: relative;
       width: 100%; }
-  /* line 48, base.css.sass */
+  /* line 47, base.css.sass */
   #logo > div:nth-of-type(2) {
     margin-left: 1em;
     float: left;
     width: 20em;
     padding: 1em; }
-    /* line 55, base.css.sass */
+    /* line 54, base.css.sass */
     #logo > div:nth-of-type(2) > h2 {
       cursor: pointer;
       -webkit-transition: opacity 2s; }
-      /* line 61, base.css.sass */
+      /* line 60, base.css.sass */
       #logo > div:nth-of-type(2) > h2 > span {
         -webkit-transition: opacity 2s;
         opacity: 0; }
-      /* line 68, base.css.sass */
+      /* line 67, base.css.sass */
       #logo > div:nth-of-type(2) > h2:hover > span {
         opacity: 1; }
-    /* line 73, base.css.sass */
+    /* line 72, base.css.sass */
     #logo > div:nth-of-type(2) > h1 {
       color: rgba(0, 0, 0, 0.8);
       padding: 0;
@@ -125,11 +125,11 @@ body {
       cursor: pointer;
       -webkit-transition: text-shadow 2s;
       -webkit-transition: color 2s; }
-      /* line 83, base.css.sass */
+      /* line 82, base.css.sass */
       #logo > div:nth-of-type(2) > h1:hover {
         color: rgba(0, 0, 0, 0.5); }
 
-/* line 92, base.css.sass */
+/* line 91, base.css.sass */
 h1, h2 {
   color: rgba(0, 0, 0, 0.3);
   font-weight: bold;
@@ -139,7 +139,7 @@ h1, h2 {
   padding: 2em;
   margin: 0; }
 
-/* line 103, base.css.sass */
+/* line 102, base.css.sass */
 h2 {
   padding: 0;
   margin: 0;
